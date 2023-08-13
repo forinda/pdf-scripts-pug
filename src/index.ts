@@ -165,70 +165,70 @@ app.get("/report-sample", (_req, res) => {
 
 app.get("/print-report", async (_req, res) => {
   try {
-    const subjects = [
-      {
-        Subject: "Mathematics",
-        Marks: 100,
-        Grade: "A",
-        Position: "1/20",
-        Remarks: "Very good",
-        Term: 1,
-        Year: 2020,
-        Teacher: "Mr. Teacher",
-      },
-      {
-        Subject: "Mathematics",
-        Marks: 100,
-        Grade: "A",
-        Position: "1/20",
-        Remarks: "Very good",
-        Term: 1,
-        Year: 2020,
-        Teacher: "Mr. Teacher",
-      },
-      {
-        Subject: "Mathematics",
-        Marks: 100,
-        Grade: "A",
-        Position: "1/20",
-        Remarks: "Very good",
-        Term: 1,
-        Year: 2020,
-        Teacher: "Mr. Teacher",
-      },
-    ];
+    // const subjects = [
+    //   {
+    //     Subject: "Mathematics",
+    //     Marks: 100,
+    //     Grade: "A",
+    //     Position: "1/20",
+    //     Remarks: "Very good",
+    //     Term: 1,
+    //     Year: 2020,
+    //     Teacher: "Mr. Teacher",
+    //   },
+    //   {
+    //     Subject: "Mathematics",
+    //     Marks: 100,
+    //     Grade: "A",
+    //     Position: "1/20",
+    //     Remarks: "Very good",
+    //     Term: 1,
+    //     Year: 2020,
+    //     Teacher: "Mr. Teacher",
+    //   },
+    //   {
+    //     Subject: "Mathematics",
+    //     Marks: 100,
+    //     Grade: "A",
+    //     Position: "1/20",
+    //     Remarks: "Very good",
+    //     Term: 1,
+    //     Year: 2020,
+    //     Teacher: "Mr. Teacher",
+    //   },
+    // ];
 
-    const classTrend = [
-      {
-        class: "Form 1",
-        stream: "A",
-        terms: [
-          {
-            term: 1,
-            year: 2020,
-            mean: 100,
-            average: 100,
-            grade: "A",
-            position: "1/20",
-            remarks: "Very good",
-          },
-          {
-            term: 2,
-            year: 2020,
-            mean: 100,
-            average: 100,
-            grade: "A",
-            position: "1/20",
-            remarks: "Very good",
-          },
-        ],
-      },
-    ];
-    const fees = {
-      schoolFeeBalance: 1000,
-      transportFeeBalance: 1000,
-      nextTermFeeBalance: 1000,
-    };
+    // const classTrend = [
+    //   {
+    //     class: "Form 1",
+    //     stream: "A",
+    //     terms: [
+    //       {
+    //         term: 1,
+    //         year: 2020,
+    //         mean: 100,
+    //         average: 100,
+    //         grade: "A",
+    //         position: "1/20",
+    //         remarks: "Very good",
+    //       },
+    //       {
+    //         term: 2,
+    //         year: 2020,
+    //         mean: 100,
+    //         average: 100,
+    //         grade: "A",
+    //         position: "1/20",
+    //         remarks: "Very good",
+    //       },
+    //     ],
+    //   },
+    // ];
+    // const fees = {
+    //   schoolFeeBalance: 1000,
+    //   transportFeeBalance: 1000,
+    //   nextTermFeeBalance: 1000,
+    // };
     const templateOptions: EnatonPdfHtmlTemplateOptions = {
       title: "Report Sample",
       name: "John Doe",
